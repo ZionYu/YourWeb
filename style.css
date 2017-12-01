@@ -13,7 +13,7 @@
            width:800px;
            margin:0 auto;}
 #about,#my-work,#contact-me{}
-.manu li{
+.menu li{
   width: 150px;
   padding: 10px 0px;
   border: 1px solid #fff;
@@ -31,8 +31,13 @@ background: #fff;}
 li:hover a{color: #ff6600;
 font-weight: 800}
 /* my avatar */
-#my-avatar{float: left;margin-right: 20px}
-#my-avatar img{width: 200px}
+#my-avatar{
+  float: left;
+  margin-right: 20px;
+}
+#my-avatar img{
+  width: 200px ;
+}
 h1{margin-bottom: 0;}
 h3{margin: 0;}
 table{font-size: 14px;text-align: left;}
@@ -88,6 +93,94 @@ form.contact-form{
 {background-color: #407FC7;
 }
 #content > .container > div{padding: 78px;}
+
 hr.bar{border: 2px solid #ff6600;
        width:80px;}
 .menu{float: right;}
+h1 {
+  text-align: center;
+}
+
+#about h1 {
+  margin-bottom: 0;
+  text-align: left;
+}
+#my-work-gallery {
+    text-align: center;
+}
+
+/*
+  原始 css code
+*/
+
+@media screen and (min-width: 1024px) {
+  .menu-button ,
+  .menu-button-checkbox{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .container {
+    width: auto;
+  }
+
+  .menu-button {
+    float: right;
+    font-size: 25px;
+    line-height: 40px;
+    color: white;
+    background: transparent;
+    padding: 0 15px;
+    border: 0;
+  }
+  
+  .menu-button-checkbox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 55px;
+    height: 40px;
+    opacity: 0;
+  }
+
+  .menu-button-checkbox:checked ~ .menu {
+    display: block;
+  }
+  .menu {
+    display: none;
+    margin-top: 0;
+    padding-left: 0;
+    position: fixed;
+    right: 0;
+    top: 40px;
+    width: 150px;
+    height: 100%;
+    background: red;
+  }
+
+  .menu li {
+    border: 0;
+    border-radius: 0;
+  }
+  #my-avatar {
+  width: 100%; 
+  }
+
+  #my-avatar img {
+  display: block;
+  margin: 15px auto;
+  }
+  .item {
+    max-width: 100%;
+  }
+
+  form.contact-form {
+    width: 80%;
+  }
+
+
+  /*
+    往下繼續手機版 css code
+  */
+}
